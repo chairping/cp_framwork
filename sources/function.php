@@ -218,7 +218,7 @@ function single_process($process_name, $pid_file) {
         fputs($fp, $cur_pid);
         ftruncate($fp, strlen($cur_pid));
         fclose($fp);
-        return true;xhprof
+        return true;
     }
     else {
         return false;
