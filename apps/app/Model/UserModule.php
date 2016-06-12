@@ -1,0 +1,13 @@
+<?php
+
+namespace App\Model;
+
+/**
+ * ÓÃ»§Ä£¿é
+ * Class UserModule
+ * @package App\Model
+ */
+class UserModule extends \Model{
+
+    protected $table = 'user_module';
+}
