@@ -1,12 +1,14 @@
 <?php
 
 namespace App\Middleware;
+use Core\Middleware;
+
 /**
  * 网站维护检测
  * Class Maintenance
  * @package App\Middleware
  */
-class Maintenance extends \Middleware {
+class Maintenance extends Middleware {
 
     public function call() {
 

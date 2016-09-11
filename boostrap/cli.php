@@ -1,10 +1,9 @@
 <?php
 
+$app = require '../components/app/vendor/autoload.php';
 
 // cli 端入口文件
 define('APP_NAME', 'cli_app'); // app应用目录名称
-
-
 date_default_timezone_set('Asia/ShangHai');
 
 
@@ -14,7 +13,7 @@ if (PHP_SAPI != 'cli') {
 
 $opts = getopt("m:c:a:");
 
-$m = isset($opts['m']) ? $opts['m'] : '';
+$m = isset($opts['m']) ? $opts['m'] : 'Cli';
 $c = isset($opts['c']) ? $opts['c'] : '';
 $a = isset($opts['a']) ? $opts['a'] : 'index';
 
@@ -36,7 +35,6 @@ define('ACTION', $a);
 
 require 'init.php';
 
-/* @var \Application $app*/
-$app = new Application($config);
-$app->setErrorLevel();
-$app->run();
+(new \Core\Application($config))->registerComponents()
+    ->setErrorLevel()
+    ->run();

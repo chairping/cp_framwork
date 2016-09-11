@@ -1,11 +1,21 @@
 <?php
-
 namespace App\Module\Home\Controller;
 
-
-class IndexController extends \ApiController{
+class IndexController extends \ViewController{
 
     public function index() {
-        dd('this is controller');
+
+//	   $province = new \App\Model\ProvinceModel();
+
+	   /* $test = $province->find(1); */
+		
+     //  $redis = \Lib\Redis::getInstance();
+        var_dump('xx');
+
+       $this->display();
+    }
+
+    public function test(){
+        echo 'test';
     }
 }

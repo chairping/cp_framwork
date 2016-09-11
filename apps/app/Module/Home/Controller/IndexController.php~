@@ -1,0 +1,26 @@
+<?php
+
+namespace App\Module\Home\Controller;
+
+
+class IndexController extends \ViewController{
+
+    public function index() {
+
+	   $province = new \App\Model\ProvinceModel();
+
+	   $test = $province->find(1);
+		
+	   $redis = \Lib\Redis::getInstance();
+	//	$redis->set('xx', 'xxx');
+	   var_dump($redis->get('xx'));
+	   
+	#	$tri = new \App\Trie\Trie();
+
+	   #$tri->getKey();
+
+	   #$obj = new \App\Cache\Cache();
+	   #$obj('test', 'a');
+//       echo  'this is controller';
+    }
+}

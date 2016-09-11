@@ -1,0 +1,7 @@
+{
+    "require": {
+        "vlucas/phpdotenv": "^2.3",
+        "beberlei/composer-monorepo-plugin": "^0.12.0"
+    }
+
+}

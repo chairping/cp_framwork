@@ -1,0 +1,10 @@
+{
+  "deps": [
+    "components\\source",
+    "vendor/vlucas/phpdotenv"
+  ],
+  "autoload": {
+    "psr-4": {"App\\": "../../apps/app/"}
+  }
+
+}
