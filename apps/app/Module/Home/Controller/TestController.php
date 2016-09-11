@@ -8,11 +8,10 @@
 
 namespace App\Module\Home\Controller;
 
+use Core\ApiController;
 use Lib\Email\PHPMailer;
-use Lib\Memc;
-use Lib\SportGet;
 
-class TestController extends \ApiController {
+class TestController extends ApiController {
 
     public function sendMail() {
         $mail = new PHPMailer(true);
