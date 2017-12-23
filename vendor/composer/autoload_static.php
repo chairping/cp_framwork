@@ -6,32 +6,26 @@ namespace Composer\Autoload;
 
 class ComposerStaticInitbfcd726d979f7005b05505ec66be7b13
 {
+    public static $files = array (
+        '4e0c06daab6b398189e9b954391f34f9' => __DIR__ . '/../..' . '/source/functions.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
-        'D' => 
+        'A' => 
         array (
-            'Dotenv\\' => 7,
+            'App\\' => 4,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Dotenv\\' => 
+        'App\\' => 
         array (
-            0 => __DIR__ . '/..' . '/vlucas/phpdotenv/src',
+            0 => __DIR__ . '/../..' . '/app',
         ),
     );
 
     public static $fallbackDirsPsr4 = array (
-        0 => __DIR__ . '/../..' . '/sources',
-    );
-
-    public static $prefixesPsr0 = array (
-        'M' => 
-        array (
-            'Monorepo\\' => 
-            array (
-                0 => __DIR__ . '/..' . '/beberlei/composer-monorepo-plugin/src/main',
-            ),
-        ),
+        0 => __DIR__ . '/../..' . '/source',
     );
 
     public static function getInitializer(ClassLoader $loader)
@@ -40,7 +34,6 @@ class ComposerStaticInitbfcd726d979f7005b05505ec66be7b13
             $loader->prefixLengthsPsr4 = ComposerStaticInitbfcd726d979f7005b05505ec66be7b13::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitbfcd726d979f7005b05505ec66be7b13::$prefixDirsPsr4;
             $loader->fallbackDirsPsr4 = ComposerStaticInitbfcd726d979f7005b05505ec66be7b13::$fallbackDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitbfcd726d979f7005b05505ec66be7b13::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }

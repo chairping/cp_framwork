@@ -6,5 +6,4 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Monorepo\\' => array($vendorDir . '/beberlei/composer-monorepo-plugin/src/main'),
 );

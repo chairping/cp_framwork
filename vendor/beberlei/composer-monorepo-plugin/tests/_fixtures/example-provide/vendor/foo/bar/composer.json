@@ -1,6 +1,0 @@
-{
-    "name": "foo/bar",
-    "replace": {
-        "foo/baz": "self.version"
-    }
-}

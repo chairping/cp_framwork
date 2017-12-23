@@ -1,7 +1,9 @@
 {
-    "require": {
-        "vlucas/phpdotenv": "^2.3",
-        "beberlei/composer-monorepo-plugin": "^0.12.0"
+    "autoload": {
+        "psr-4": {
+            "": "source/",
+           "App\\": "app/"
+        },
+        "files": ["source/functions.php"]
     }
-
 }
