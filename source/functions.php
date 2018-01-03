@@ -248,7 +248,7 @@ function get_current_command() {
 }
 
 function xhprofEnable() {
-    
+
     xhprof_enable();
     xhprof_enable(XHPROF_FLAGS_CPU + XHPROF_FLAGS_MEMORY);
     xhprof_enable(XHPROF_FLAGS_NO_BUILTINS | XHPROF_FLAGS_CPU | XHPROF_FLAGS_MEMORY);

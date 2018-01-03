@@ -10,11 +10,11 @@ class IndexController extends \ViewController{
 	   $province = new \App\Model\ProvinceModel();
 
 	   $test = $province->find(1);
-		
+
 	   $redis = \Lib\Redis::getInstance();
 	//	$redis->set('xx', 'xxx');
 	   var_dump($redis->get('xx'));
-	   
+
 	#	$tri = new \App\Trie\Trie();
 
 	   #$tri->getKey();

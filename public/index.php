@@ -6,13 +6,13 @@ define('APP_NAME', 'app'); // app应用目录名称
 $app = require '../vendor/autoload.php';
 $app = require '../boostrap/app_start.php';
 
-//xhprofEnable();
-//
+// xhprofEnable();
+
 $app->addMiddleware(new \App\Middleware\Maintenance());  // 检测网站是否开启维护
 $app->addMiddleware(new \Middleware\Cors());
 $app->run();
 
-//xhprofDisable();
+// xhprofDisable();
 
 exit();
 
