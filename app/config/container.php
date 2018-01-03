@@ -5,7 +5,7 @@ $config['container.singleton'] = [
 
 ];
 
-//$config['container.normal'] = [
+// $config['container.normal'] = [
 //    'loginRecord' => function($c) {  // 用户登录成功后执行
 //        return new \App\Lib\UserLoginRecord();
 //    }

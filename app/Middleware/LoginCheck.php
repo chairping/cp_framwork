@@ -4,11 +4,18 @@ namespace App\Middleware;
 
 use Core\Middleware;
 
+/**
+ * Class: LoginCheck
+ */
 class LoginCheck extends Middleware {
 
+    /**
+     * sfsf
+     *
+     * @return void
+     */
     public function call() {
-
-        if (!$this->whiteList()) {
+if (!$this->whiteList()) {
             $userInfo = '';
 
             if (isset($_SESSION['user_info'])) {
